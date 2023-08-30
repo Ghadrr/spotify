@@ -1,0 +1,170 @@
+*{
+    margin:0 ;
+    padding: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: c;
+}
+
+.container{
+    background-color:#000000;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: 1fr 9fr;
+    gap: 9px;
+    grid-template-areas: 
+    "header nav" 
+    "aside main"
+    "footer footer"
+    
+}
+
+nav{
+    grid-area: nav;
+    background-color:  #101010;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.btn_search{
+    background-color: aqua;
+
+
+}
+
+.btn_sign{
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    height: 55px;
+    width: 125px;
+    border-radius: 50px;
+    font-size: large;
+    cursor: pointer;
+}
+.btn_log{
+    height: 45px;
+    width: 165px;
+    border-radius: 50px;
+    font-size: large;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.search{
+    background-color: #242424 ;
+    border-radius: 20px;
+}
+
+header{
+    grid-area: header;
+    background-color: #121212;
+    display: grid;
+    justify-content: space-between;
+}
+.btn-menu{
+    display: flex;
+    color: aliceblue;
+    
+}
+
+aside{
+    grid-area: aside;
+    background-color:  #121212;
+    color: aliceblue;
+    
+}
+
+aside> .playslist{
+    display: flex;
+    padding: 25px;
+    
+} 
+.div-box> .box{
+    display: block;
+    background-color: #242424;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom:  20px;
+    height: 150px;
+  
+    
+}   
+ .btn_aside{
+    border-radius: 50px;
+    cursor: pointer;
+    border-color: transparent;
+
+} 
+
+main{
+    grid-area: main;
+    display: grid;
+    background-color: #121212;
+    color: white;
+    margin-top: -25px;
+    
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    background: linear-gradient(to right, #ae2a98,#5199f3);
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.sec{
+    display: flex;
+    height: 300px;
+}
+
+.section{ 
+    height: 20px;
+    padding: 10px;
+    
+
+}
+
+
+.picture{
+    margin: 5px;
+    display: grid;
+    justify-content: space-evenly;
+    height: 250px;
+    width: 170px;
+    background-color: #242424;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.picture:hover{
+    transition: 0.3s;
+    background-color: gray;
+}
+
+.btn-play{
+    background-color: green;
+    width: 30px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: end;
+    margin-top: -70px;
+    margin-left: 110px;
+}
+
+.musica{
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+}
+
+.titulo{
+    background-color: transparent;
+    align-items: center;
+}
